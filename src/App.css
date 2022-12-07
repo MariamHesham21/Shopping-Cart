@@ -1,0 +1,418 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: rgb(225, 226, 227);
+}
+
+.Nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  height: 6rem;
+  padding: 1.8rem;
+}
+.Nav .logo{
+  width: 9rem;
+  height: 3rem;
+  margin-left: 5rem;
+
+}
+.Nav .search input{
+  width: 28rem;
+  height: 2.3rem;
+  padding: 1rem;
+  border-color: #077915;
+  font-size: 1.1rem;
+  border-radius: 3px;
+
+
+}
+.Nav .search-button{
+  padding: 5.4px 40px;
+  background-color:#077915 ;
+  color: white;
+  border-color:#077915;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 3px;
+
+}
+.Cart-shopping {
+  width: 5rem;
+  margin-right: 6rem;
+}
+.Cart-shopping  a{
+  color: #077915;
+
+}
+.icon-cart {
+  font-size: 3rem;
+}
+.change-number{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: red;
+  border-radius: 2.5rem 1rem; 
+  padding: 4px;
+}
+
+.All-Card{
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  justify-content: center;
+
+}
+.card{
+  background-color: white;
+  text-align: center;
+
+}
+.card .vage-img img{
+  width: 17rem;
+}
+.vage-text{
+  padding: .6rem;
+}
+.vage-text h3{
+  color:rgb(49, 48, 48);
+  padding: 1rem;
+}
+.vage-input{
+  margin:.5rem;
+}
+.vage-input input{
+   height: 24px;
+    width: 40px;
+    text-align: center;
+    margin: 0 12px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+
+}
+.vage-input button{
+  background-color: white;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.vage-btn{
+  width: 100%;
+  transition: all .3s ease-in;
+  cursor: pointer;
+}
+.vage-btn button{
+background-color: #077915;
+border-color: #077915;
+color: white;
+padding: 10px 20px;
+margin: 1rem;
+cursor: pointer;
+}
+/* shopping cart*/
+.ShopingCart{
+  text-align: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.Cart-header{
+  margin: 1rem;
+}
+.img-empty img{
+  width:35rem;
+}
+.text-empty{
+  margin: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(70, 66, 66);
+}
+.Cart-complete{
+  display: grid;
+  justify-content: center;
+}
+.All-Cart{
+  display: flex;
+  width:100%;
+  justify-content: space-around;
+  background-color: rgb(245, 241, 235);
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 2px;
+}
+.All-Cart img{
+  width: 12rem;
+  border-radius:5px;
+}
+.disply-cart{
+  display: grid;
+}
+.Cart-complete p{
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+.cart-name p span{
+  color:rgb(70, 66, 66) ;
+}
+.total-price{
+  font-size: 1.5rem;
+}
+
+.cheake-out button{
+  background-color: #077915;
+border-color: #077915;
+color: white;
+padding: 15px 30px;
+margin: 1rem;
+cursor: pointer;
+}
+.text-empty button{
+  background-color: #077915;
+  border-color: #077915;
+  color: white;
+  padding: 15px 30px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.catagory{
+  justify-content: center;
+  display: flex;
+} 
+.catagory button{
+  background-color:#077915;
+  color: white;
+  border: none;
+  padding: 10px 17px;
+  margin: .5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius:8px ;
+  cursor: pointer;
+}
+.catagory button:focus{
+  background-color: white;
+  color:#077915;
+}
+
+@media (max-width: 500px){
+  .Nav{
+    width: 100%;
+  }
+  .Nav .logo{
+    width: 4.5rem;
+    height: 2rem;
+    margin-left: 0rem;
+  }
+  .Nav .search input{
+    width: 10rem;
+    height: 2rem;
+    padding: 1rem;
+    border-color: #077915;
+    font-size: .9rem;
+    border-radius: 3px;
+  }
+  .Nav .search-button{
+    padding: 2px 15px;
+    background-color:#077915 ;
+    color: white;
+    border-color:#077915;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 3px;
+  
+  }
+  .Cart-shopping{
+    color: #077915;
+    width: 3rem;
+    margin-right: 0rem;
+    display: flex;
+  }
+  .icon-cart{
+    font-size: 2rem;
+  }
+  .change-number{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: red;
+    border-radius: 2rem 1rem; 
+    padding: 2px;
+  }
+  
+
+
+}
+
+
+
+@media (max-width: 786px){
+  .Nav{
+    width: 100%;
+  }
+  .Nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    height: 6rem;
+    padding: 1.8rem;
+  }
+  .Nav .logo{
+    width: 7rem;
+    height: 2rem;
+    margin-left: 0rem;
+  
+  } 
+  .search{
+    display: flex;
+  }
+  .Nav .search input{
+    width: 10rem;
+    height: 2.3rem;
+    padding: 1rem;
+    border-color: #077915;
+    font-size: 1rem;
+    border-radius: 3px;
+  
+  
+  }
+  .Nav .search-button{
+    padding:5.5px 12px;
+    background-color:#077915 ;
+    color: white;
+    border-color:#077915;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 3px;
+  
+  }
+  .Cart-shopping{
+    color: #077915;
+    width: 5rem;
+    margin-right: 0rem;
+  
+  
+  }
+  .icon-cart{
+    font-size: 2.5rem;
+  }
+  .change-number{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: red;
+    border-radius: 2rem 1rem; 
+    padding: 3px;
+  }
+
+  .All-Card{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    justify-content: start;
+    margin-left: 3rem;
+  
+  }
+
+  .card{
+    background-color: white;
+    text-align: center;
+  
+  }
+  .card .vage-img img{
+    width: 10rem;
+  }
+  .vage-text h3{
+    color:rgb(49, 48, 48);
+  }
+  .vage-input input{
+     height: 24px;
+      width: 40px;
+      text-align: center;
+      margin: 0 12px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+      font-size: 1.2rem;
+  
+  }
+  .vage-input button{
+    background-color: white;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .vage-btn{
+    width: 100%;
+    transition: all .3s ease-in;
+  }
+  .vage-btn button{
+  background-color: #077915;
+  border-color: #077915;
+  color: white;
+  padding: 10px 20px;
+  margin: 1rem;
+  cursor: pointer;
+  }
+
+  /* shopping cart*/
+.ShopingCart{
+  margin:1rem;
+}
+
+.img-empty img{
+  width:20rem;
+}
+.All-Cart img{
+  width:9rem;
+}
+
+.Cart-complete p{
+  margin: 1rem;
+  font-size: .8rem;
+}
+.border{
+
+}
+.total-price{
+  font-size: 1.2rem;
+}
+.cheake-out button{
+  background-color: #077915;
+border-color: #077915;
+color: white;
+padding: 15px 30px;
+margin: 1rem;
+cursor: pointer;
+}
+.text-empty button{
+  background-color: #077915;
+  border-color: #077915;
+  color: white;
+  padding: 15px 30px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+}
+
