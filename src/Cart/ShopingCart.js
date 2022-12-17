@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 
-const ShopingCart = ({cartItems,handleAddItems,handleRemovItems,handleRemove}) => {
+const ShopingCart = ({cartItems,handleAddItems,handleRemovItems,handleRemove,AddItems}) => {
     const totalPrice= cartItems.reduce((price,item)=>price +item.quantity * item.price,0)
 
 
@@ -36,7 +36,7 @@ const ShopingCart = ({cartItems,handleAddItems,handleRemovItems,handleRemove}) =
                     <div className='vage-input'>
                         <button onClick={()=>handleRemovItems(item)}>-</button>
                         <input type="text" className="quantity" value={item.quantity}/>
-                        <button onClick={()=>handleAddItems(item)}>+</button>
+                        <button onClick={()=>AddItems(item)}>+</button>
                     </div>
                     <div className='cart-price'>
                     </div>

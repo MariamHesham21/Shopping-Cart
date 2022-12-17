@@ -1,12 +1,3 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family:Arial, Helvetica, sans-serif;
-}
-body{
-  background-color: rgb(225, 226, 227);
-}
 
 .Nav{
   display: flex;
@@ -28,8 +19,6 @@ body{
   border-color: #077915;
   font-size: 1.1rem;
   border-radius: 3px;
-
-
 }
 .Nav .search-button{
   padding: 5.4px 40px;
@@ -73,7 +62,6 @@ body{
 .card{
   background-color: white;
   text-align: center;
-
 }
 .card .vage-img img{
   width: 17rem;
@@ -208,9 +196,10 @@ cursor: pointer;
   color:#077915;
 }
 
-@media (max-width: 500px){
+@media (max-width:375px){
   .Nav{
     width: 100%;
+    display: grid;
   }
   .Nav .logo{
     width: 4.5rem;
@@ -260,7 +249,7 @@ cursor: pointer;
 
 
 
-@media (max-width: 786px){
+@media (max-width: 375px){
   .Nav{
     width: 100%;
   }
