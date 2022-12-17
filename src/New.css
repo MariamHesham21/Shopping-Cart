@@ -403,7 +403,7 @@
   }
 }
 
-@media (max-width: 375px){
+@media (max-width: 550px){
 
     .Nav{
         display: flex;
@@ -425,7 +425,7 @@
         display: flex;
     }
     .Nav .search input{
-        width:9rem;
+        width:90%;
         height: 2rem;
         padding: .7rem;
         border-color: #077915;
